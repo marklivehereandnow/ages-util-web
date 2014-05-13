@@ -5,7 +5,7 @@
  */
 package util;
 
-import entity.CardEntity;
+import com.livehereandnow.ages.card.CardEntity;
 import entity.CardEntityManager;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -143,11 +143,30 @@ public class CardEntityUtil {
 
     public void composeSQL() {
         String s1 = "   INSERT INTO `AGES`.`CARD_ENTITY` ("
-                + " `ID` ,`NAME` ,`AGE` ,`CIVIL_MILITARY` ,`TAG` ,"
-                + "`ACTION` ,`ICON_POINTS` ,`EFFECT`  ,`COLOR` ,"
+                + " `ID` ,"
+                + "`NAME` ,"
+                + "`AGE` ,"
+                + "`CIVIL_MILITARY` ,"
+                + "`TAG` ,"
+                + "`ACTION` ,"
+                + "`ICON_POINTS` ,"
+                + "`EFFECT`  ,"
+                + "`COLOR` ,"
                 + "`CNT` ,"
-                + "`TOKEN_WHITE` ,`TOKEN_RED` ,`TOKEN_YELLOW` ,`TOKEN_BLUE` ,"
-                + "`EFFECT_WHITE` ,`EFFECT_FOOD` ,`EFFECT_RED` ,`EFFECT_MUSIC` ,`EFFECT_STONE` ,`EFFECT_IDEA` ,`EFFECT_SMILE` ,`EFFECT_HOUSE` ,`EFFECT_BLUE` ,`EFFECT_WEAPON`) ";
+                + "`TOKEN_BLUE` ,"
+                + "`TOKEN_RED` ,"
+                + "`TOKEN_WHITE` ,"
+                + "`TOKEN_YELLOW` ,"
+                + "`EFFECT_BLUE` ,"
+                + "`EFFECT_FOOD` ,"
+                + "`EFFECT_HOUSE` ,"
+                + "`EFFECT_IDEA` ,"
+                + "`EFFECT_MUSIC` ,"
+                + "`EFFECT_RED` ,"
+                + "`EFFECT_SMILE` ,"
+                + "`EFFECT_STONE` ,"
+                + "`EFFECT_WEAPON` ,"
+                + "`EFFECT_WHITE`) ";
         StringBuilder sb = new StringBuilder();
         sb.append(s1);
         sb.append("VALUES(");

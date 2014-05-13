@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package entity;
+package com.livehereandnow.ages.card;
 
 import java.io.Serializable;
 import javax.persistence.Basic;
@@ -130,7 +130,7 @@ public class CardEntity implements Serializable {
         this.id = id;
     }
 
-    public CardEntity(Integer id, String name, Integer age, String civilMilitary, String tag, String action, String iconPoints, String effect, String cost, String color, int cnt, int tokenWhite, int tokenRed, int tokenYellow, int tokenBlue, int effectWhite, int effectFood, int effectRed, int effectMusic, int effectStone, int effectIdea, int effectSmile, int effectHouse, int effectBlue, int effectWeapon) {
+    public CardEntity(Integer id, String name, Integer age, String civilMilitary, String tag, String action, String iconPoints, String effect, String color, int cnt) {
         this.id = id;
         this.name = name;
         this.age = age;
@@ -139,47 +139,12 @@ public class CardEntity implements Serializable {
         this.action = action;
         this.iconPoints = iconPoints;
         this.effect = effect;
-        this.cost = cost;
+//        this.cost = cost;
         this.color = color;
         this.cnt = cnt;
-        this.tokenWhite = tokenWhite;
-        this.tokenRed = tokenRed;
-        this.tokenYellow = tokenYellow;
-        this.tokenBlue = tokenBlue;
-        this.effectWhite = effectWhite;
-        this.effectFood = effectFood;
-        this.effectRed = effectRed;
-        this.effectMusic = effectMusic;
-        this.effectStone = effectStone;
-        this.effectIdea = effectIdea;
-        this.effectSmile = effectSmile;
-        this.effectHouse = effectHouse;
-        this.effectBlue = effectBlue;
-        this.effectWeapon = effectWeapon;
     }
 
-    public CardEntity(Integer id, String action, String iconPoints, String effect, int cnt, int tokenWhite, int tokenRed, int tokenYellow, int tokenBlue, int effectWhite, int effectFood, int effectRed, int effectMusic, int effectStone, int effectIdea, int effectSmile, int effectHouse, int effectBlue, int effectWeapon) {
-        this.id = id;
-        this.action = action;
-        this.iconPoints = iconPoints;
-        this.effect = effect;
-        this.cnt = cnt;
-        this.tokenWhite = tokenWhite;
-        this.tokenRed = tokenRed;
-        this.tokenYellow = tokenYellow;
-        this.tokenBlue = tokenBlue;
-        this.effectWhite = effectWhite;
-        this.effectFood = effectFood;
-        this.effectRed = effectRed;
-        this.effectMusic = effectMusic;
-        this.effectStone = effectStone;
-        this.effectIdea = effectIdea;
-        this.effectSmile = effectSmile;
-        this.effectHouse = effectHouse;
-        this.effectBlue = effectBlue;
-        this.effectWeapon = effectWeapon;
-    }
-
+    
     public Integer getId() {
         return id;
     }

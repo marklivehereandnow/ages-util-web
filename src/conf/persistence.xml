@@ -5,7 +5,7 @@
     <class>ages.cards.CardList</class>
     <class>com.livehereandnow.ages.card.Card</class>
     <class>com.livehereandnow.ages.card.xxxCards</class>
-    <class>entity.CardEntity</class>
+    <class>com.livehereandnow.ages.card.CardEntity</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://2nd2go.org:3306/AGES?zeroDateTimeBehavior=convertToNull"/>
       <property name="javax.persistence.jdbc.user" value="max"/>
